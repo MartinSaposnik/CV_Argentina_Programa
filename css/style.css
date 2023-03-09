@@ -1,0 +1,387 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.contenedor {
+
+    position: relative;
+    width: 95%;
+    max-width: 1000px;
+    min-height: 1000px;
+    background: #fff;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.anio_compania h5 {
+    color: black;
+}
+
+.informacion.estudios {
+    margin-top: 90px;
+}
+
+
+.informacion {
+    color: #fff;
+
+}
+
+.informacion.idiomas {
+
+    margin-top: 70px;
+}
+
+h4 {
+    font-size: 15px;
+}
+
+h5, .textoSiempre {
+    color: #FC7300
+
+}
+
+.icono:hover {
+
+    cursor: pointer;
+}
+
+#diploma1 {
+    display: none;
+}
+
+
+
+/*Parte para celulares y tablets*/
+@media only screen and (max-width: 600px) {
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Itim', cursive;
+    }
+
+    #nombre {
+        font-size: 15px;
+        margin-top: 15px;
+        margin-bottom: 30px;
+    }
+
+    h1 {
+        font-size: 10px;
+
+    }
+
+    #imagenn {
+        align-items: center;
+        border: 1px solid grey;
+        margin-left: 5px;
+        margin-top: 0px;
+        width: 120px;
+        height: 120px;
+
+    }
+
+    .informacion ul li {
+        position: relative;
+        margin-left: 15px;
+        margin-top: 7px;
+        font-size: 13px;
+        color: #fff;
+    }
+
+
+
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 5vh;
+    }
+
+    .izquierda {
+        position: center;
+        background: rgb(22, 71, 94);
+        padding: 7px;
+    }
+
+    .derecha {
+        position: relative;
+        background: #fff;
+        padding: 9px;
+
+    }
+
+    #nombre {
+        align-items: center;
+        float: none;
+        padding: 0px;
+        color: #fff;
+
+    }
+
+    .acerca {
+
+        margin-bottom: 100px;
+        margin-left: 5px;
+    }
+
+    .titulo2 {
+        color: rgb(63, 100, 119);
+        font-family: 'Roboto', sans-serif;
+        margin-top: 5px;
+        margin-bottom: 5px;
+
+    }
+
+    .acerca .caja {
+        display: flex;
+        margin: 10px 0;
+        flex-direction: column;
+    }
+
+    .acerca .caja .anio_compania {
+        min-width: 60px;
+    }
+
+    .acerca .caja .anio_compania h5 {
+        text-transform: uppercase;
+        color: #FC7300;
+        font-weight: 300;
+    }
+
+    .acerca p {
+        margin-top: 0px;
+        margin-bottom: 10px;
+    }
+
+    .informacion ul {
+        position: relative;
+    }
+
+    .informacion ul li {
+        list-style: none;
+        position: relative;
+        cursor: pointer;
+        margin: 10px 0;
+    }
+
+    .informacion ul li .icono {
+        display: inline-block;
+        color: #03a9f4;
+        width: fit-content;
+        padding: 1rem;
+
+
+
+
+    }
+
+    #mostrar {
+        display: none;
+        position: center;
+        margin: 10px;
+        margin-left: 10px;
+    }
+
+    #mostrar2 {
+        display: none;
+        position: relative;
+        margin-top: 10px;
+        font-size: 10px;
+    }
+
+    #mostrar3 {
+        display: none;
+        position: relative;
+        margin: 10px;
+        margin-left: 10px;
+    }
+
+    #diploma {
+        color: rgb(63, 100, 119);
+    }
+
+    #diplomaa {
+        width: 250px;
+        height: 250px;
+    }
+
+    .informacion {
+        margin-top: 15px;
+        margin-bottom: 45px;
+    }
+
+}
+
+
+
+
+/* Parte para computadoras*/
+@media only screen and (min-width: 601px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+
+    }
+
+    #imagenn {
+        width: 150px;
+        height: 150px;
+    }
+
+    h1 {
+        font-size: 25px;
+
+    }
+
+    .informacion ul li {
+        position: relative;
+        margin-left: 20px;
+        margin-top: 15px;
+
+    }
+
+
+    .izquierda {
+        position: relative;
+        background: #00425A;
+        padding: 20px;
+    }
+
+    .derecha {
+        position: relative;
+        background: #BFDB38;
+        padding: 20px;
+
+    }
+
+    #imagenn {
+        align-items: center;
+        border: 1px solid grey;
+        margin-left: 50px;
+        margin-top: 20px;
+
+    }
+
+    #nombre {
+        align-items: center;
+        float: none;
+        margin-top: 15px;
+        margin-left: 15px;
+
+        color: #fff;
+
+    }
+
+    .acerca {
+
+        margin-bottom: 100px;
+        margin-left: 15px;
+    }
+
+    .titulo2 {
+        color: rgb(63, 100, 119);
+        margin-top: 55px;
+        margin-bottom: 15px;
+
+    }
+
+    .acerca .caja {
+        display: flex;
+        margin: 20px 0;
+        flex-direction: row;
+    }
+
+    .acerca .caja .anio_compania {
+        min-width: 150px;
+    }
+
+    .acerca .caja .anio_compania h5 {
+        text-transform: uppercase;
+        color: #00425A;
+        font-weight: 300;
+    }
+
+    .acerca p {
+        margin-top: 5px;
+        margin-bottom: 20px;
+    }
+
+    .informacion ul {
+        position: relative;
+    }
+
+    .informacion ul li {
+        list-style: none;
+        position: relative;
+        cursor: pointer;
+        margin: 10px 0;
+    }
+
+    .informacion ul li .icono {
+        display: inline-block;
+        color: #03a9f4;
+        width: 30px;
+        margin-top: 10px;
+
+
+
+    }
+
+
+    #mostrar {
+        display: none;
+        position: center;
+        margin: 10px;
+        margin-left: 70px;
+    }
+
+    #mostrar2 {
+        display: none;
+        position: center;
+        margin: 10px;
+        margin-left: 70px;
+    }
+
+    #mostrar3 {
+        display: none;
+        position: relative;
+        margin: 10px;
+        margin-left: 70px;
+    }
+
+    #fechaNac {
+        margin-left: 70px;
+        margin-bottom: 55px;
+
+    }
+
+    #diploma {
+        color: rgb(63, 100, 119);
+    }
+
+    #diplomaa {
+        width: 500px;
+        height: 500px;
+    }
+
+    .informacion {
+        margin-top: 30px;
+        margin-bottom: 70px;
+    }
+
+}
